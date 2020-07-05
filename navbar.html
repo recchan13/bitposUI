@@ -1,0 +1,79 @@
+<!--navbar-->
+<div class="header">
+    <div class="header-menu">
+        <div class="title">BIT<span>POS</span></div>
+        <div class="sidebar-btn">
+            <i class="fa fa-bars"></i>
+        </div>
+    </div>
+</div>
+<!--navbar-->
+<!--sidebar-->
+<div class="sidebar">
+    <div class="sidebar-menu">
+        <center class="profile">
+            <img src="./img/no-pic.png" alt="">
+            <p>username</p>
+        </center>
+        <li class="item">
+            <a href="index.php" class="menu-btn">
+                <i class="fa fa-home"></i><span>Dashboard</span>
+            </a>
+        </li>
+        <li class="item">
+            <a href="pengguna.php" class="menu-btn">
+                <i class="fa fa-user-circle"></i><span>Pengguna</span>
+            </a>
+        </li>
+        <li class="item" id="masterdata">
+            <a href="#masterdata" class="menu-btn">
+                <i class="fa fa-folder"></i><span>Master Data<i class="fa fa-chevron-down drop-down"></i></span>
+            </a>
+            <div class="sub-menu">
+                <a href="group.php"><i class="fa fa-circle"></i><span>Group</span></a>
+                <a href="kategori.php"><i class="fa fa-circle"></i><span>Kategori</span></a>
+                <a href="subkategori.php"><i class="fa fa-circle"></i><span>Sub-Kategori</span></a>
+                <a href="satuan.php"><i class="fa fa-circle"></i><span>Satuan</span></a>
+                <a href="barang.php"><i class="fa fa-circle"></i><span>Barang</span></a>
+            </div>
+        </li>
+        <li class="item">
+            <a href="order.php" class="menu-btn">
+                <i class="fa fa-list"></i><span>Order</span>
+            </a>
+        </li>
+        <li class="item">
+            <a href="kasir.php" class="menu-btn">
+                <i class="fa fa-briefcase"></i><span>Kasir</span>
+            </a>
+        </li>
+        <li class="item" id="laporan">
+            <a href="#laporan" class="menu-btn">
+                <i class="fa fa-file-text"></i><span>Laporan<i class="fa fa-chevron-down drop-down"></i></span>
+            </a>
+            <div class="sub-menu">
+                <a href="laporan_penjualan.php"><i class="fa fa-circle"></i><span>Laporan Penjualan</span></a>
+                <a href="laporan_barang.php"><i class="fa fa-circle"></i><span>Laporan Barang</span></a>
+            </div>
+        </li>
+        <li class="item" id="pengaturan">
+            <a href="#pengaturan" class="menu-btn">
+                <i class="fa fa-cog"></i><span>Pengaturan<i class="fa fa-chevron-down drop-down"></i></span>
+            </a>
+            <div class="sub-menu">
+                <a href="email.php"><i class="fa fa-circle"></i><span>Email</span></a>
+                <a href="menu.php"><i class="fa fa-circle"></i><span>Menu</span></a>
+            </div>
+        </li>
+    </div>
+</div>
+<!--wrapper-->
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".sidebar-btn").click(function () {
+            $(".wrapper").toggleClass("collapse");
+        });
+    });
+</script>
