@@ -12,19 +12,19 @@
         <!-- navbar -->
         <?php include "navbar.html"?>
 
-        <!-- isi group php -->
+        <!-- isi email php -->
         <div class="main-container">
             <div class="header-container">
-                GROUP
+                PENGATURAN
             </div>
             <div class="row">
                 <div class="big-card">
-                    <h4>Daftar Group</h4>
-                    <button type="button" class="btn btn-add" onclick="window.location.href='group_tambah.php'"><i class="fa fa-plus"></i></button>
-                    <P>tabel disini</P>
+                    <div class="centered-wrapper">
+                        <h4>Email Setup</h4>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- isi group php -->
+        <!-- isi email php -->
     </div>
 </body>

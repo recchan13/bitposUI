@@ -23,7 +23,7 @@
                     <button type="button" class="btn btn-add"><i class="fa fa-plus"></i></button>
                     <button type="button" class="btn btn-refresh"><i class="fa fa-refresh"></i></button>
                     <button type="button" class="btn btn-add-green"><i class="fa fa-plus"></i> Gudang POS</button>
-                    <button type="button" class="btn btn-filter"><i class="fa fa-filter"></i></button>
+                    <button type="button" class="btn btn-blue"><i class="fa fa-filter"></i></button>
                     <P>tabel disini</P>
                 </div>
             </div>

@@ -12,19 +12,20 @@
         <!-- navbar -->
         <?php include "navbar.html"?>
 
-        <!-- isi group php -->
+        <!-- isi PENJUALAN php -->
         <div class="main-container">
             <div class="header-container">
-                GROUP
+                LAPORAN
             </div>
             <div class="row">
                 <div class="big-card">
-                    <h4>Daftar Group</h4>
-                    <button type="button" class="btn btn-add" onclick="window.location.href='group_tambah.php'"><i class="fa fa-plus"></i></button>
-                    <P>tabel disini</P>
+                    <h4>Laporan Penjualan Barang</h4>
+                    <button type="button" class="btn btn-blue"><i class="fa fa-filter"></i></button>
+                    <button type="button" class="btn btn-blue"><i class="fa fa-print"></i></button>
+                    <p>tabel disini</p>
                 </div>
             </div>
         </div>
-        <!-- isi group php -->
+        <!-- isi PENJUALAN php -->
     </div>
 </body>

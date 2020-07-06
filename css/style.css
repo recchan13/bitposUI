@@ -262,6 +262,15 @@
     font-weight: 500;
   }
 
+  .centered-wrapper{
+    padding: 25px;
+    text-align: center;
+  }
+  .centered-wrapper > h4 {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
   /* FORMAT BUTTON */
   .btn-add {
     border-radius: 10%;
@@ -273,6 +282,7 @@
     border-color: #224E6B;
   }
   .btn-add:hover{
+    cursor: pointer;
     color: #fff;
     background-color: #224E6B;
     border-color: #224E6B;
@@ -293,6 +303,7 @@
     border-color: #4BA867;
   }
   .btn-refresh:hover{
+    cursor: pointer;
     color: #fff;
     background-color: #4BA867;
     border-color: #4BA867;
@@ -313,6 +324,7 @@
     border-color: #4BA867;
   }
   .btn-add-green:hover{
+    cursor: pointer;
     color: #fff;
     background-color: #4BA867;
     border-color: #4BA867;
@@ -323,7 +335,7 @@
     border-color: #3e8854;
   }
 
-  .btn-filter {
+  .btn-blue {
     border-radius: 10%;
     color: #fff;
     width: 35px;
@@ -332,13 +344,78 @@
     background-color: #224E6B;
     border-color: #224E6B;
   }
-  .btn-filter:hover{
+  .btn-blue:hover{
+    cursor: pointer;
     color: #fff;
     background-color: #224E6B;
     border-color: #224E6B;
   }
-  .btn-filter:focus{
+  .btn-blue:focus{
     color: #fff;
     background-color: #1d435c;
     border-color: #286090;
+  }
+
+  .btn-cancel {
+    border-radius: 10%;
+    color: #fff;
+    width: 100px;
+    height: 40px;
+    margin: 10px 5px 10px 0px;
+    background-color: #c72432;
+    border-color: #c72432;
+  }
+  .btn-cancel:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #c72432;
+    border-color: #c72432;
+  }
+  .btn-cancel:focus{
+    color: #fff;
+    background-color: #941e27;
+    border-color: #941e27;
+  }
+  .btn-cancel > p{
+    padding: 5px;
+  }
+
+  .btn-submit {
+    border-radius: 10%;
+    color: #fff;
+    width: 100px;
+    height: 40px;
+    margin: 10px 5px 10px 0px;
+    background-color: #4BA867;
+    border-color: #4BA867;
+  }
+  .btn-submit:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #4BA867;
+    border-color: #4BA867;
+  }
+  .btn-submit:focus{
+    color: #fff;
+    background-color: #3e8854;
+    border-color: #3e8854;
+  }
+
+  /* UNTUK FORM */
+  
+  input[type=text], select, textarea {
+    width: 90%;
+    height: 50px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 6px 5% 16px 5% ;
+    resize: vertical;
+  }
+
+
+  /* ################################ RESPONSIF UNTUK MOBILE ######################## */
+  @media only screen and (max-width: 600px) {
+    
   }
