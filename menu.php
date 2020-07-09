@@ -21,6 +21,17 @@
                 <div class="big-card">
                     <div class="centered-wrapper">
                         <h4>Menu Setup</h4>
+                        <form action="email.php" id="email">
+                            <select id="inventory" name="inventory">
+                                <option value="" disabled selected>Inventory</option>
+                                <option value="inventory1">inventory1</option>
+                                <option value="inventory2">inventory2</option>
+                                <option value="inventory3">inventory3</option>
+                            </select>
+                            
+                            <button type="submit" class="btn btn-submit" form="menu" value="Submit">Simpan</button>
+                            <button type="button" class="btn btn-cancel" onclick="window.location.href='index.php'">Reset</button>
+                        </form>
                     </div>
                 </div>
             </div>
