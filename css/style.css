@@ -218,6 +218,7 @@
   .wrapper .main-container .row{
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
   }
 
   .wrapper .main-container .card{
@@ -314,12 +315,66 @@
   .order-total{
     background: #224E6B;
     width: 100%;
+    color: white;
     padding: 30px 20px 30px 30px;
   }
   .order-total > p{
     font-size: 32px;
     font-weight: 900;
-    color: white;
+  }
+  
+  .flex-card{
+    border-radius: 5px;
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    font-size: 15px;
+  }
+  .flex-card.grow1{
+    width: 55%;
+  }
+  .flex-card.grow2{
+    width: 39%;
+  }
+  .flex-card.grow2 .order-total{
+    border-radius: 5px;
+    padding: 15px;
+  }
+  .flex-card.grow2 .order-total > h4{
+    margin-bottom: 30px;
+  }
+
+  .grey-card{
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    background: #F2F3F7;
+    color: #a5a5a5;
+    padding: 45px;
+    font-size: 100px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .form-card{
+    border-radius: 5px;
+    width: 100%;
+    background: #F2F3F7;
+    color: black;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .form-card > p{
+    margin-bottom: 15px;
+  }
+  .form-card > input[type=text]{
+    height: 40px;
+  }
+  .form-card > select{
+    height: 40px;
+    cursor: pointer;
   }
 
   /* ==================================== FORMAT BUTTON ==================================== */
@@ -455,6 +510,62 @@
     border-color: #3e8854;
   }
 
+  /* ====================== TOGGLE SWITCH (SLIDER) ========================== */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+    margin-left: 8px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+    
+  }
+  
+  input:checked + .slider {
+    background-color: #4BA867;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #4BA867;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(13px);
+    -ms-transform: translateX(13px);
+    transform: translateX(13px);
+  }
+
   /* ====================== UNTUK FORM ========================== */
   
   input[type=text], select, textarea {
@@ -468,7 +579,7 @@
     resize: vertical;
   }
 
-  /* POSITION BUTTON PADA IMPORT BUTTON */
+  /* ========== POSITION BUTTON PADA IMPORT BUTTON ==========*/
   .join-textbutton {
     width: 100%;
     margin-bottom: 6px;
@@ -506,7 +617,13 @@
     button span{
       display:none;
     }
-
+    
+    .flex-card.grow1{
+      width: 100%;
+    }
+    .flex-card.grow2{
+      width: 100%;
+    }
   }
 
   /* ################################ RESPONSIF UNTUK MOBILE ######################## */
