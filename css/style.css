@@ -89,7 +89,7 @@
     position: fixed;
     top: 70px;
     width: 230px;
-    height: calc(100% - 9%);
+    height: 100%;
     transition: 0.3s;
     transition-property: width;
     overflow-y: auto;
@@ -187,7 +187,7 @@
     padding: 15px;
     background: #F2F3F7;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     transition: 0.3s;
   }
   
@@ -217,6 +217,7 @@
   
   .wrapper .main-container .row{
     display: flex;
+    flex-wrap: wrap;
   }
 
   .wrapper .main-container .card{
@@ -252,7 +253,6 @@
     background: white;
     padding: 15px;
     margin: 10px;
-    margin-bottom: 10px;
     font-size: 15px;
   }
   
@@ -263,17 +263,68 @@
   }
 
   .centered-wrapper{
-    padding: 25px;
+    padding: 25px 5% 120px 5%;
     text-align: center;
   }
   .centered-wrapper > h4 {
     font-size: 18px;
+    margin-bottom: 50px;
+  }
+
+  .left-wrapper{
+    padding: 15px 2% 120px 2%;
+    text-align: left;
+  }
+  .left-wrapper > h4 {
+    font-size: 18px;
+    margin-top: 15px;
     margin-bottom: 25px;
   }
 
-  /* FORMAT BUTTON */
+  .order-card{
+    border-radius: 5px;
+    width: 180px;
+    text-align: center;
+    background: #224E6B;
+    padding: 25px;
+    margin: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: white;
+  }
+  .order-card .input-order{
+    margin-top: 30px;
+  }
+  .order-card > h5{
+    font-size: 14px;
+    padding-bottom: 30px;
+  }
+  .order-card > p{
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .input-order > input[type=text] {
+    width: 100%;
+    height: 35px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-bottom: 6px;
+    resize: vertical;
+  }
+  .order-total{
+    background: #224E6B;
+    width: 100%;
+    padding: 30px 20px 30px 30px;
+  }
+  .order-total > p{
+    font-size: 32px;
+    font-weight: 900;
+    color: white;
+  }
+
+  /* ==================================== FORMAT BUTTON ==================================== */
   .btn-add {
-    border-radius: 10%;
+    border-radius: 3px;
     color: #fff;
     width: 35px;
     height: 35px;
@@ -294,7 +345,7 @@
   }
 
   .btn-refresh {
-    border-radius: 10%;
+    border-radius: 3px;
     color: #fff;
     width: 35px;
     height: 35px;
@@ -315,7 +366,7 @@
   }
 
   .btn-add-green {
-    border-radius: 10%;
+    border-radius: 3px;
     color: #fff;
     width: 120px;
     height: 35px;
@@ -336,7 +387,7 @@
   }
 
   .btn-blue {
-    border-radius: 10%;
+    border-radius: 3px;
     color: #fff;
     width: 35px;
     height: 35px;
@@ -357,13 +408,15 @@
   }
 
   .btn-cancel {
-    border-radius: 10%;
+    border-radius: 3px;
     color: #fff;
     width: 100px;
     height: 40px;
-    margin: 10px 5px 10px 0px;
+    margin: 40px 5px 10px 0px;
     background-color: #c72432;
     border-color: #c72432;
+    float: left;
+
   }
   .btn-cancel:hover{
     cursor: pointer;
@@ -381,13 +434,14 @@
   }
 
   .btn-submit {
-    border-radius: 10%;
+    border-radius: 3px;
     color: #fff;
     width: 100px;
     height: 40px;
-    margin: 10px 5px 10px 0px;
+    margin: 40px 5px 10px 0px;
     background-color: #4BA867;
     border-color: #4BA867;
+    float: left;
   }
   .btn-submit:hover{
     cursor: pointer;
@@ -401,19 +455,59 @@
     border-color: #3e8854;
   }
 
-  /* UNTUK FORM */
+  /* ====================== UNTUK FORM ========================== */
   
   input[type=text], select, textarea {
-    width: 90%;
+    width: 100%;
     height: 50px;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin: 6px 5% 16px 5% ;
+    margin-bottom: 6px;
     resize: vertical;
   }
 
+  /* POSITION BUTTON PADA IMPORT BUTTON */
+  .join-textbutton {
+    width: 100%;
+    margin-bottom: 6px;
+    height: 50px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+  .join-textbutton select:focus, .join-textbutton select:active {
+    outline: none;
+    cursor: pointer;
+  }
+  .join-textbutton select {
+    width: 90%;
+    height: 45px;
+    margin: 0px;
+    float: left;
+    border: none;
+  }
+  .join-textbutton button {
+    width: 10%;
+    height: 49px;
+    float: right;
+    margin: 0px;
+  }
+
+  .textbox-notif {
+    font-size: 12px;
+    float: left;
+    margin-bottom: 6px;
+  }
+
+  /* ################################ RESPONSIF UNTUK 860px ######################## */
+  @media only screen and (max-width : 860px){
+    button span{
+      display:none;
+    }
+
+  }
 
   /* ################################ RESPONSIF UNTUK MOBILE ######################## */
   @media only screen and (max-width: 600px) {

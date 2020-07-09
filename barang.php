@@ -20,9 +20,9 @@
             <div class="row">
                 <div class="big-card">
                     <h4>Daftar Barang</h4>
-                    <button type="button" class="btn btn-add"><i class="fa fa-plus"></i></button>
-                    <button type="button" class="btn btn-refresh"><i class="fa fa-refresh"></i></button>
-                    <button type="button" class="btn btn-add-green"><i class="fa fa-plus"></i> Gudang POS</button>
+                    <button type="button" class="btn btn-add" onclick="window.location.href='barang_tambah.php'"><i class="fa fa-plus"></i></button>
+                    <button type="button" class="btn btn-refresh"><i class="fa fa-refresh" onclick="window.location.reload();"></i></button>
+                    <button type="button" class="btn btn-add-green" onclick="window.location.href='barang_import.php'"><i class="fa fa-plus"></i> Gudang POS</button>
                     <button type="button" class="btn btn-blue"><i class="fa fa-filter"></i></button>
                     <P>tabel disini</P>
                 </div>

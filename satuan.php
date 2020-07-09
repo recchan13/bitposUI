@@ -20,7 +20,7 @@
             <div class="row">
                 <div class="big-card">
                     <h4>Daftar Satuan</h4>
-                    <button type="button" class="btn btn-add"><i class="fa fa-plus"></i></button>
+                    <button type="button" class="btn btn-add"  onclick="window.location.href='satuan_tambah.php'"><i class="fa fa-plus"></i></button>
                     <P>tabel disini</P>
                 </div>
             </div>
