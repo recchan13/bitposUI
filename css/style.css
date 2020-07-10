@@ -509,6 +509,66 @@
     background-color: #3e8854;
     border-color: #3e8854;
   }
+  .btn-smallblue{
+    border-radius: 3px;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    margin: 10px 5px 10px 0px;
+    background-color: #224E6B;
+    border-color: #224E6B;
+  }
+  .btn-smallblue:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #224E6B;
+    border-color: #224E6B;
+  }
+  .btn-smallblue:focus{
+    color: #fff;
+    background-color: #1d435c;
+    border-color: #286090;
+  }
+  .btn-smallred{
+    border-radius: 3px;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    margin: 10px 5px 10px 0px;
+    background-color: #c72432;
+    border-color: #c72432;
+  }
+  .btn-smallred:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #c72432;
+    border-color: #c72432;
+  }
+  .btn-smallred:focus{
+    color: #fff;
+    background-color: #941e27;
+    border-color: #941e27;
+  }
+  .btn-smallgreen{
+    border-radius: 3px;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    margin: 10px 5px 10px 0px;
+    background-color: #4BA867;
+    border-color: #4BA867;
+  }
+  .btn-smallgreen:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #4BA867;
+    border-color: #4BA867;
+  }
+  .btn-smallgreen:focus{
+    color: #fff;
+    background-color: #3e8854;
+    border-color: #3e8854;
+  }
 
   /* ====================== TOGGLE SWITCH (SLIDER) ========================== */
   .switch {
@@ -613,6 +673,40 @@
     font-size: 12px;
     float: left;
     margin-bottom: 6px;
+  }
+
+  /* #################################### TABEL #################################### */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+  
+  th{
+    text-align: left;
+    padding: 15px;
+    background-color: #F2F3F7 ;
+  }
+  td {
+    white-space: nowrap;
+    text-align: left;
+    padding: 15px;
+  }
+  .check-icon{
+    border-radius: 100px;
+    color: white;
+    background-color: #4BA867;
+    width: 25px;
+    height: 25px;
+    padding: 6px;
+  }
+  .flag-icon{
+    border-radius: 100px;
+    color: #4BA867;
+    width: 25px;
+    height: 25px;
+    padding: 6px;
   }
 
   /* ################################ RESPONSIF UNTUK 860px ######################## */

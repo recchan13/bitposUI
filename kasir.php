@@ -34,7 +34,53 @@
                         <option value="barang2">barang2</option>
                         <option value="barang3">barang3</option>
                     </select>
-                    <p>tabel disini</p>
+                    
+                    <div style="overflow-x:auto;">
+                        <table>
+                            <tr>
+                                <th></th>
+                                <th>Barang</th>
+                                <th>Jumlah</th>
+                                <th>Harga</th>
+                                <th>Diskon</th>
+                                <th>Subtotal</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn-smallred" onclick="window.location.href='#'"><i class="fa fa-times"></i></button>
+                                </td>
+                                <td>Beras Putri Sejagat</td>
+                                <td>
+                                    <input type="text" id="bayar" name="bayar" placeholder="0">
+                                </td>
+                                <td>Rp.55,000</td>
+                                <td>
+                                    <input type="text" id="diskon" name="diskon" placeholder="0">
+                                </td>
+                                <td>
+                                    <input type="text" id="subtotal" name="subtotal" placeholder="0" disabled="disabled">
+                                </td>
+                            </tr>
+                            <tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn-smallred" onclick="window.location.href='#'"><i class="fa fa-times"></i></button>
+                                </td>
+                                <td>Minyak Bimoli</td>
+                                <td>
+                                    <input type="text" id="bayar" name="bayar" placeholder="0">
+                                </td>
+                                <td>Rp.22,000</td>
+                                <td>
+                                    <input type="text" id="diskon" name="diskon" placeholder="0">
+                                </td>
+                                <td>
+                                    <input type="text" id="subtotal" name="subtotal" placeholder="0" disabled="disabled">
+                                </td>
+                            </tr>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
                 <div class="flex-card grow2">
                     <h4>Ringkasan</h4>

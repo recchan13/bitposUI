@@ -21,7 +21,79 @@
                 <div class="big-card">
                     <h4>Daftar Order</h4>
                     <button type="button" class="btn btn-add" onclick="window.location.href='order_tambah.php'"><i class="fa fa-plus"></i></button>
-                    <P>tabel disini</P>
+                    
+                    <div style="overflow-x:auto;">
+                        <table>
+                            <tr>
+                                <th>Action</th>
+                                <th>Kode</th>
+                                <th>Nama</th>
+                                <th>Email</th>
+                                <th>Nomor Telepon</th>
+                                <th>Status</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn-smallblue" onclick="window.location.href='order_detail.php'"><i class="fa fa-eye"></i></button>
+                                </td>
+                                <td>order20200511095426</td>
+                                <td>Order1</td>
+                                <td>order@gmail.com</td>
+                                <td>081212983756</td>
+                                <td>
+                                    <i class="flag-icon fa fa-flag"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn-smallblue" onclick="window.location.href='order_detail.php'"><i class="fa fa-eye"></i></button>
+                                </td>
+                                <td>order20200511095426</td>
+                                <td>Order1</td>
+                                <td>order@gmail.com</td>
+                                <td>081212983756</td>
+                                <td>
+                                    <i class="flag-icon fa fa-flag"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn-smallblue" onclick="window.location.href='order_detail.php'"><i class="fa fa-eye"></i></button>
+                                </td>
+                                <td>order20200511095426</td>
+                                <td>Order1</td>
+                                <td>order@gmail.com</td>
+                                <td>081212983756</td>
+                                <td>
+                                    <i class="flag-icon fa fa-flag"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn-smallblue" onclick="window.location.href='order_detail.php'"><i class="fa fa-eye"></i></button>
+                                </td>
+                                <td>order20200511095426</td>
+                                <td>Order1</td>
+                                <td>order@gmail.com</td>
+                                <td>081212983756</td>
+                                <td>
+                                    <i class="flag-icon fa fa-flag"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn-smallblue" onclick="window.location.href='order_detail.php'"><i class="fa fa-eye"></i></button>
+                                </td>
+                                <td>order20200511095426</td>
+                                <td>Order1</td>
+                                <td>order@gmail.com</td>
+                                <td>081212983756</td>
+                                <td>
+                                    <i class="flag-icon fa fa-flag"></i>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>

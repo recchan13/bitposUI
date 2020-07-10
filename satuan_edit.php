@@ -20,11 +20,11 @@
             <div class="row">
                 <div class="big-card">
                     <div class="centered-wrapper">
-                        <h4>Form Satuan</h4>
-                        <form action="satuan.php" id="satuan_tambah">
+                        <h4>Edit Satuan</h4>
+                        <form action="satuan.php" id="satuan_edit">
                             <input type="text" id="name" name="name" placeholder="Nama satuan">
 
-                            <button type="submit" class="btn btn-submit" form="satuan_tambah" value="Submit">Submit</button>
+                            <button type="submit" class="btn btn-submit" form="satuan_edit" value="Submit">Submit</button>
                             <button type="button" class="btn btn-cancel" onclick="window.location.href='satuan.php'">Cancel</button>
                         </form>
                     </div>

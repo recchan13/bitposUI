@@ -12,26 +12,26 @@
         <!-- navbar -->
         <?php include "navbar.html"?>
 
-        <!-- isi form satuan php -->
+        <!-- isi form group php -->
         <div class="main-container">
             <div class="header-container">
-                SATUAN
+                GROUP
             </div>
             <div class="row">
                 <div class="big-card">
                     <div class="centered-wrapper">
-                        <h4>Form Satuan</h4>
-                        <form action="satuan.php" id="satuan_tambah">
-                            <input type="text" id="name" name="name" placeholder="Nama satuan">
+                        <h4>Edit Group</h4>
+                        <form action="group.php" id="group_edit">
+                            <input type="text" id="name" name="name" placeholder="Nama Group">
 
-                            <button type="submit" class="btn btn-submit" form="satuan_tambah" value="Submit">Submit</button>
-                            <button type="button" class="btn btn-cancel" onclick="window.location.href='satuan.php'">Cancel</button>
+                            <button type="submit" class="btn btn-submit" form="group_edit" value="Submit">Submit</button>
+                            <button type="button" class="btn btn-cancel" onclick="window.location.href='group.php'">Cancel</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- isi form satuan php -->
+        <!-- isi form group php -->
     </div>
 </body>
 </html>

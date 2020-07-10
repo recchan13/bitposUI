@@ -23,7 +23,44 @@
                     <button type="button" class="btn btn-add" onclick="window.location.href='pengguna_tambah.php'">
                         <i class="fa fa-plus"></i>
                     </button>
-                    <P>tabel disini</P>
+                    <div style="overflow-x:auto;">
+                        <table>
+                            <tr>
+                                <th>Action</th>
+                                <th>Username</th>
+                                <th>Nama</th>
+                                <th>Email</th>
+                                <th>Role</th>
+                                <th>Status</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn-smallblue" onclick="window.location.href='pengguna_edit.php'"><i class="fa fa-pencil"></i></button>
+                                    <button type="button" class="btn btn-smallred" onclick="window.location.href='pengguna_delete.php'"><i class="fa fa-trash"></i></button>
+                                </td>
+                                <td>manager</td>
+                                <td>Manager</td>
+                                <td>manager@gmail.com</td>
+                                <td>Manager</td>
+                                <td>
+                                <i class="check-icon fa fa-check"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn btn-smallblue" onclick="window.location.href='pengguna_edit.php'"><i class="fa fa-pencil"></i></button>
+                                    <button type="button" class="btn btn-smallred" onclick="window.location.href='pengguna_delete.php'"><i class="fa fa-trash"></i></button>
+                                </td>
+                                <td>admin</td>
+                                <td>Admin</td>
+                                <td>admin@gmail.com</td>
+                                <td>Admin</td>
+                                <td>
+                                    <i class="check-icon fa fa-check"></i>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
