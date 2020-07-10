@@ -116,16 +116,34 @@
                         </div>
 
                         <h4>Total Keseluruhan</h4>
+                        <div class="order-total">
+                            <p>Rp. 0</p>
+                        </div>
 
-                        <form action="order.php" id="order_tambah">
-                            <div class="order-total">
-                                <p>Rp. 0</p>
-                            </div>
-
-                            <button type="submit" class="btn btn-submit" form="order_tambah" value="Submit">Order</button>
-                            <button type="button" class="btn btn-cancel" onclick="window.location.href='order.php'">Cancel</button>
-                        </form>
+                        <button type="submit" class="btn btn-submit" onclick="window.location.href='#user_detail'">Order</button>
+                        <button type="button" class="btn btn-cancel" onclick="window.location.href='order.php'">Cancel</button>
+                        
                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- POPUP -->
+        <div id="user_detail" class="overlay">
+            <div class="popup">
+                <h4>Order</h4>
+                <a class="close" href="#">
+                    <button type="button" class="btn btn-smallred" onclick="window.location.href='#'"><i class="fa fa-times"></i></button>
+                </a>
+                <div class="content">
+                    <form action="order.php" id="order_tambah">
+
+                    </form>
+                    <input type="text" id="name" name="name" placeholder="Nama">
+                    <input type="text" id="email" name="email" placeholder="Email">
+                    <input type="text" id="phone" name="phone" placeholder="Nomor Telpon">
+                    
+                    <button type="submit" class="btn btn-submit" form="order_tambah" value="Submit">Order</button>
+                    <button type="button" class="btn btn-cancel" onclick="window.location.href='order.php'">Cancel</button>    
                 </div>
             </div>
         </div>

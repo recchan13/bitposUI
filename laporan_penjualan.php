@@ -36,7 +36,7 @@
                             <tr>
                                 <td>
                                     <button type="button" class="btn btn-smallblue" onclick="window.location.href='#'"><i class="fa fa-print"></i></button>
-                                    <button type="button" class="btn btn-smallblue" onclick="window.location.href='laporan_detail.php'"><i class="fa fa-eye"></i></button>
+                                    <button type="button" class="btn btn-smallblue" onclick="window.location.href='#penjualan_detail'"><i class="fa fa-eye"></i></button>
                                     <button type="button" class="btn btn-smallred" onclick="window.location.href='#'"><i class="fa fa-trash"></i></button>
                                 </td>
                                 <td>10100608113956</td>
@@ -49,7 +49,7 @@
                             <tr>
                                 <td>
                                     <button type="button" class="btn btn-smallblue" onclick="window.location.href='#'"><i class="fa fa-print"></i></button>
-                                    <button type="button" class="btn btn-smallblue" onclick="window.location.href='laporan_detail.php'"><i class="fa fa-eye"></i></button>
+                                    <button type="button" class="btn btn-smallblue" onclick="window.location.href='#penjualan_detail'"><i class="fa fa-eye"></i></button>
                                     <button type="button" class="btn btn-smallred" onclick="window.location.href='#'"><i class="fa fa-trash"></i></button>
                                 </td>
                                 <td>10100608113956</td>
@@ -62,7 +62,7 @@
                             <tr>
                                 <td>
                                     <button type="button" class="btn btn-smallblue" onclick="window.location.href='#'"><i class="fa fa-print"></i></button>
-                                    <button type="button" class="btn btn-smallblue" onclick="window.location.href='laporan_detail.php'"><i class="fa fa-eye"></i></button>
+                                    <button type="button" class="btn btn-smallblue" onclick="window.location.href='#penjualan_detail'"><i class="fa fa-eye"></i></button>
                                     <button type="button" class="btn btn-smallred" onclick="window.location.href='#'"><i class="fa fa-trash"></i></button>
                                 </td>
                                 <td>10100608113956</td>
@@ -75,7 +75,7 @@
                             <tr>
                                 <td>
                                     <button type="button" class="btn btn-smallblue" onclick="window.location.href='#'"><i class="fa fa-print"></i></button>
-                                    <button type="button" class="btn btn-smallblue" onclick="window.location.href='laporan_detail.php'"><i class="fa fa-eye"></i></button>
+                                    <button type="button" class="btn btn-smallblue" onclick="window.location.href='#penjualan_detail'"><i class="fa fa-eye"></i></button>
                                     <button type="button" class="btn btn-smallred" onclick="window.location.href='#'"><i class="fa fa-trash"></i></button>
                                 </td>
                                 <td>10100608113956</td>
@@ -86,6 +86,42 @@
                                 <td>superadmin</td>
                             </tr>
                         </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- POPUP -->
+        <div id="penjualan_detail" class="overlay">
+            <div class="popup">
+                <h4>Detail Transaksi</h4>
+                <a class="close" href="#">
+                    <button type="button" class="btn btn-smallred" onclick="window.location.href='#'"><i class="fa fa-times"></i></button>
+                </a>
+                <div class="content">
+                    <div style="overflow-x:auto;">
+                        <table>
+                            <tr>
+                                <th>Barang</th>
+                                <th>Qty</th>
+                                <th>Harga</th>
+                                <th>Diskon</th>
+                                <th>Subtotal</th>
+                            </tr>
+                            <tr>
+                                <td>Beras Putri Sejagat</td>
+                                <td>2</td>
+                                <td>Rp.55,000</td>
+                                <td>0%</td>
+                                <td>Rp.110,000</td>
+                            </tr>
+                            <tr>
+                                <td>Teh Kotak Soseo</td>
+                                <td>2</td>
+                                <td>Rp.7,000</td>
+                                <td>0%</td>
+                                <td>Rp.14,000</td>
+                            </tr>
+                        <table>
                     </div>
                 </div>
             </div>

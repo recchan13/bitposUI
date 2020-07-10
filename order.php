@@ -34,7 +34,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <button type="button" class="btn btn-smallblue" onclick="window.location.href='order_detail.php'"><i class="fa fa-eye"></i></button>
+                                    <button type="button" class="btn btn-smallblue" onclick="window.location.href='#order_detail'"><i class="fa fa-eye"></i></button>
                                 </td>
                                 <td>order20200511095426</td>
                                 <td>Order1</td>
@@ -46,7 +46,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <button type="button" class="btn btn-smallblue" onclick="window.location.href='order_detail.php'"><i class="fa fa-eye"></i></button>
+                                    <button type="button" class="btn btn-smallblue" onclick="window.location.href='#order_detail'"><i class="fa fa-eye"></i></button>
                                 </td>
                                 <td>order20200511095426</td>
                                 <td>Order1</td>
@@ -58,7 +58,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <button type="button" class="btn btn-smallblue" onclick="window.location.href='order_detail.php'"><i class="fa fa-eye"></i></button>
+                                    <button type="button" class="btn btn-smallblue" onclick="window.location.href='#order_detail'"><i class="fa fa-eye"></i></button>
                                 </td>
                                 <td>order20200511095426</td>
                                 <td>Order1</td>
@@ -70,7 +70,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <button type="button" class="btn btn-smallblue" onclick="window.location.href='order_detail.php'"><i class="fa fa-eye"></i></button>
+                                    <button type="button" class="btn btn-smallblue" onclick="window.location.href='#order_detail'"><i class="fa fa-eye"></i></button>
                                 </td>
                                 <td>order20200511095426</td>
                                 <td>Order1</td>
@@ -82,7 +82,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <button type="button" class="btn btn-smallblue" onclick="window.location.href='order_detail.php'"><i class="fa fa-eye"></i></button>
+                                    <button type="button" class="btn btn-smallblue" onclick="window.location.href='#order_detail'"><i class="fa fa-eye"></i></button>
                                 </td>
                                 <td>order20200511095426</td>
                                 <td>Order1</td>
@@ -93,6 +93,42 @@
                                 </td>
                             </tr>
                         </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- POPUP -->
+        <div id="order_detail" class="overlay">
+            <div class="popup">
+                <h4>Detail Order</h4>
+                <a class="close" href="#">
+                    <button type="button" class="btn btn-smallred" onclick="window.location.href='#'"><i class="fa fa-times"></i></button>
+                </a>
+                <div class="content">
+                    <div style="overflow-x:auto;">
+                        <table>
+                            <tr>
+                                <th>Barang</th>
+                                <th>Jumlah</th>
+                                <th>Harga</th>
+                                <th>Diskon</th>
+                                <th>Subtotal</th>
+                            </tr>
+                            <tr>
+                                <td>Beras Putri Sejagat</td>
+                                <td>1</td>
+                                <td>Rp.55,000</td>
+                                <td>0%</td>
+                                <td>Rp.55,000</td>
+                            </tr>
+                            <tr>
+                                <td>Minyak Bimoli</td>
+                                <td>1</td>
+                                <td>Rp.30,000</td>
+                                <td>0%</td>
+                                <td>Rp.30,000</td>
+                            </tr>
+                        <table>
                     </div>
                 </div>
             </div>
