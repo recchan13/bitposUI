@@ -35,7 +35,7 @@
                         <option value="barang3">barang3</option>
                     </select>
                     
-                    <div style="overflow-x:auto;">
+                    <div class="table-round" style="overflow-x:auto;">
                         <table>
                             <tr>
                                 <th></th>

@@ -1,11 +1,13 @@
 <!--navbar-->
 <div class="header">
     <div class="header-menu">
-        <div class="title">BIT<span>POS</span></div>
-        <div class="sidebar-btn">
-            <i class="fa fa-bars"></i>
+        <div class="hamburger hamburger--cancel is-active">
+            <div class="hamburger-box">
+                <div class="hamburger-inner"></div>
+            </div>
         </div>
     </div>
+    <div class="title">BIT<span>POS</span></div>
 </div>
 <!--navbar-->
 <!--sidebar-->
@@ -72,8 +74,13 @@
 <script src="lib/jquery/jquery.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
-        $(".sidebar-btn").click(function () {
+        $(".hamburger").click(function () {
             $(".wrapper").toggleClass("collapse");
         });
+    });
+
+    var hamburger = document.querySelector(".hamburger");
+    hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("is-active");
     });
 </script>

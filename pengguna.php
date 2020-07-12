@@ -23,7 +23,7 @@
                     <button type="button" class="btn btn-add" onclick="window.location.href='pengguna_tambah.php'">
                         <i class="fa fa-plus"></i>
                     </button>
-                    <div style="overflow-x:auto;">
+                    <div class="table-round" style="overflow-x:auto;">
                         <table>
                             <tr>
                                 <th>Action</th>
@@ -60,6 +60,13 @@
                                 </td>
                             </tr>
                         </table>
+                    </div>
+                    <div class="pagination">
+                        <a href="#">Sebelumnya</a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a class="active" href="#">3</a>
+                        <a class="disable" href="#">Selanjutnya</a>
                     </div>
                 </div>
             </div>

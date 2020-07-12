@@ -22,7 +22,7 @@
                     <h4>Daftar Order</h4>
                     <button type="button" class="btn btn-add" onclick="window.location.href='order_tambah.php'"><i class="fa fa-plus"></i></button>
                     
-                    <div style="overflow-x:auto;">
+                    <div class="table-round" style="overflow-x:auto;">
                         <table>
                             <tr>
                                 <th>Action</th>
@@ -94,6 +94,13 @@
                             </tr>
                         </table>
                     </div>
+                    <div class="pagination">
+                        <a href="#">Sebelumnya</a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a class="active" href="#">3</a>
+                        <a class="disable" href="#">Selanjutnya</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -105,7 +112,7 @@
                     <button type="button" class="btn btn-smallred" onclick="window.location.href='#'"><i class="fa fa-times"></i></button>
                 </a>
                 <div class="content">
-                    <div style="overflow-x:auto;">
+                    <div class="table-round" style="overflow-x:auto;">
                         <table>
                             <tr>
                                 <th>Barang</th>
