@@ -105,7 +105,7 @@
                     <button type="button" class="btn btn-smallred" onclick="window.location.href='#'"><i class="fa fa-times"></i></button>
                 </a>
                 <div class="content">
-                    <div style="overflow-x:auto;">
+                    <div div class="table-round" style="overflow-x:auto;">
                         <table>
                             <tr>
                                 <th>Barang</th>
