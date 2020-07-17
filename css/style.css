@@ -263,9 +263,9 @@
     width: 70px;
   }
   
-  .wrapper.collapse .sidebar .profile img,
-  .wrapper.collapse .sidebar .profile p,
-  .wrapper.collapse .sidebar a span{
+  .wrapper.collapse .sidebar .sidebar-menu .profile img,
+  .wrapper.collapse .sidebar .sidebar-menu .profile p,
+  .wrapper.collapse .sidebar .sidebar-menu a span{
     display: none;
   }
   
@@ -918,6 +918,282 @@
   }
 
   /* ################################ RESPONSIF UNTUK MOBILE ######################## */
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 400px) {
+    .wrapper .main-container .header-container{
+      font-size: 26px;
+    }
+    .wrapper .main-container .row{
+      display: flex;
+      flex-direction: column;
+    }
+    .wrapper .header .header-menu .sidebar-btn{
+      margin-left: 180px;
+    }
+
     
+    /* HAMBURGER MENU TRANSITION */
+    .hamburger {
+      display: inline-block;
+      cursor: pointer;
+      transition-property: opacity, filter;
+      transition-duration: 0.30s;
+      transition-timing-function: linear;
+      font: inherit;
+      color: inherit;
+      text-transform: none;
+      background-color: transparent;
+      border: 0;
+      margin: 0;
+      overflow: visible; }
+      .hamburger:hover {
+        opacity: 0.7; }
+      .hamburger.is-active:hover {
+        opacity: 0.7; }
+      .hamburger.is-active .hamburger-inner,
+      .hamburger.is-active .hamburger-inner::before,
+      .hamburger.is-active .hamburger-inner::after {
+        background-color: white; }
+    
+    .hamburger-box {
+      width: 40px;
+      height: 24px;
+      display: inline-block;
+      position: relative; }
+    
+    .hamburger-inner {
+      display: block;
+      top: 50%;
+      margin-top: -2px; }
+      .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+        width: 25px;
+        height: 4px;
+        background-color: white;
+        border-radius: 4px;
+        position: absolute;
+        transition-property: transform;
+        transition-duration: 0.15s;
+        transition-timing-function: ease; }
+      .hamburger-inner::before, .hamburger-inner::after {
+        content: "";
+        display: block; }
+      .hamburger-inner::before {
+        top: -10px; }
+      .hamburger-inner::after {
+        bottom: -10px; }
+
+    .hamburger--cancel .hamburger-inner {
+      top: auto;
+      margin-left: 0px;
+      bottom: 0;
+      transition-duration: 0.13s;
+      transition-delay: 0.13s;
+      transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+      .hamburger--cancel .hamburger-inner::after {
+        top: -20px;
+        transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear; }
+      .hamburger--cancel .hamburger-inner::before {
+        transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+    
+    .hamburger--cancel.is-active .hamburger-inner {
+      margin-left: 0px;
+      transform: translate3d(0, -10px, 0) rotate(-45deg);
+      transition-delay: 0.22s;
+      transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+      .hamburger--cancel.is-active .hamburger-inner::after {
+        top: 0;
+        opacity: 0;
+        transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear; }
+      .hamburger--cancel.is-active .hamburger-inner::before {
+        top: 0;
+        transform: rotate(-90deg);
+        transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1); }
+    
+    /* HAMBURGER MENU TRANSITION END */
+
+    .wrapper .sidebar{
+      width: 70px;
+    }
+    
+    .wrapper .sidebar .sidebar-menu .profile img,
+    .wrapper .sidebar .sidebar-menu .profile p,
+    .wrapper .sidebar .sidebar-menu a span{
+      display: none;
+    }
+    
+    .wrapper .sidebar .sidebar-menu .item .menu-btn{
+      font-size: 23px;
+    }
+    
+    .wrapper .sidebar .sidebar-menu .item .sub-menu i{
+      font-size: 18px;
+      padding-left: 3px;
+    }
+    
+    .wrapper .main-container{
+      width: calc(100% - 60px);
+      margin-left: 60px;
+    }
+
+    .wrapper.collapse .sidebar{
+      z-index: 1;
+      background: #224E6B;
+      position: fixed;
+      top: 70px;
+      width: 230px;
+      height: 100%;
+      transition: 0.3s;
+      transition-property: width;
+      overflow-y: auto;
+    }
+    
+    .wrapper.collapse .sidebar .sidebar-menu{
+      overflow: hidden;
+    }
+    
+    .wrapper.collapse .sidebar .profile img{
+      margin-left: : 40px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: inline;
+    }
+    
+    .wrapper.collapse .sidebar .profile p{
+      color: rgb(255, 255, 255);
+      margin-left: 70px;
+      margin-right: 70px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      display: inline;
+    }
+    .wrapper.collapse .sidebar .sidebar-menu a span{
+      display:inline;
+    }
+    .wrapper.collapse .sidebar .sidebar-menu .item{
+      width: 250px;
+      overflow: hidden;
+    }
+    .wrapper.collapse .sidebar .sidebar-menu .profile img,
+    .wrapper.collapse .sidebar .sidebar-menu .profile p,
+    .wrapper.collapse .sidebar .sidebar-menu a span{
+      display: inline;
+    }
+    .wrapper.collapse .sidebar .sidebar-menu .item .menu-btn{
+      font-size: 15px;
+      display: block;
+      color: #fff;
+      position: relative;
+      padding: 20px 20px;
+      transition: 0.3s;
+      transition-property: color;
+    }
+    
+    .wrapper.collapse .sidebar .sidebar-menu .item .menu-btn:hover{
+      background: #1d435c;
+      text-decoration: none;
+    }
+    
+    .wrapper.collapse .sidebar .sidebar-menu .item .menu-btn i{
+      margin-right: 20px;
+    }
+    
+    .wrapper.collapse .sidebar .sidebar-menu .item .menu-btn .drop-down{
+      float: right;
+      font-size: 12px;
+      margin-top: 3px;
+    }
+    
+    .wrapper.collapse .sidebar .sidebar-menu .item .sub-menu{
+      background: #224E6B;
+      overflow: hidden;
+      max-height: 0;
+      transition: 0.3s;
+      transition-property: background, max-height;
+    }
+    
+    .wrapper.collapse .sidebar .sidebar-menu .item .sub-menu a{
+      display: block;
+      position: relative;
+      color: #fff;
+      white-space: nowrap;
+      font-size: 15px;
+      padding: 15px;
+      padding-left: 30px;
+      transition: 0.3s;
+      transition-property: background;
+    }
+    
+    .wrapper.collapse .sidebar .sidebar-menu .item .sub-menu a:hover{
+      text-decoration: none;
+      background: #1d435c;
+    }
+    
+    .wrapper.collapse .sidebar .sidebar-menu .item .sub-menu a:not(last-child){
+      border-bottom: 1px solid #224E6B;
+    }
+    
+    .wrapper.collapse .sidebar .sidebar-menu .item .sub-menu i{
+      padding-right: 20px;
+      font-size: 10px;
+    }
+    
+    .wrapper.collapse .sidebar .sidebar-menu .item:target .sub-menu{
+      max-height: 500px;
+    }
+    
+    .wrapper.collapse .main-container{
+      width: (100% - 230px);
+      margin-top: 70px;
+      margin-left: 220px;
+      padding: 15px;
+      background: #F2F3F7;
+      background-size: cover;
+      min-height: 100vh;
+      transition: 0.3s;
+    }
+
+    /* ################################ PAGINATION ######################## */
+    .pagination {
+      margin-top: 15px;
+      font-size: 10pt;
+      float: right;
+    }
+    
+    .pagination a {
+      color: black;
+      float: left;
+      padding: 5px 5px;
+      text-decoration: none;
+
+      border: 1px solid #ddd;
+      transition: background-color .3s;
+    }
+    
+    .pagination a.active {
+      background-color: #224E6B;
+      color: white;
+      border: 1px solid #224E6B;
+    }
+    .pagination a.disable {
+      pointer-events: none;
+      cursor: default;
+      background-color: #ddd;
+      color: rgb(156, 156, 156);
+    }
+    
+    .pagination a:hover:not(.active) {background-color: #ddd;}
+    
+    .pagination a:first-child {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    
+    .pagination a:last-child {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+  
+    .header .title {
+      width: 150%;
+    }
   }
