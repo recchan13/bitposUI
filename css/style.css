@@ -304,7 +304,7 @@
     padding-bottom: 30px;
   }
 
-  .wrapper .main-container .card > h5{
+  .wrapper .main-container .card > h4{
     font-size: 15px;
     padding-bottom: 30px;
   }
@@ -921,9 +921,10 @@
 
 
 /*mobile*/
-    @media only screen and (max-device-width: 768px) {
+    @media only screen and (max-device-width: 600px){
     .wrapper .main-container .header-container{
-      font-size: 40px;
+      font-size: 26px;
+      font-weight: bold;
     }
     .wrapper .main-container .row{
       display: flex;
@@ -1014,7 +1015,7 @@
     /* HAMBURGER MENU TRANSITION END */
 
     .wrapper .sidebar{
-      width: 70px;
+      width: 90px;
     }
     
     .wrapper .sidebar .sidebar-menu .profile img,
@@ -1024,7 +1025,8 @@
     }
     
     .wrapper .sidebar .sidebar-menu .item .menu-btn{
-      font-size: 20px;
+      font-size: 25px;
+      width: 310px
     }
     
     .wrapper .sidebar .sidebar-menu .item .sub-menu i{
@@ -1034,7 +1036,7 @@
     
     .wrapper .main-container{
       width: calc(100% - 60px);
-      margin-left: 60px;
+      margin-left: 90px;
     }
 
     .wrapper.collapse .sidebar{
@@ -1042,7 +1044,7 @@
       background: #224E6B;
       position: fixed;
       top: 70px;
-      width: 230px;
+      width: 300px;
       height: 100%;
       transition: 0.3s;
       transition-property: width;
@@ -1068,6 +1070,7 @@
       font-weight: 700;
       margin-bottom: 10px;
       display: inline;
+      font-size: 25px;
     }
     .wrapper.collapse .sidebar .sidebar-menu a span{
       display:inline;
@@ -1082,18 +1085,20 @@
       display: inline;
     }
     .wrapper.collapse .sidebar .sidebar-menu .item .menu-btn{
-      font-size: 20px;
+      font-size: 30px;
       display: block;
       color: #fff;
       position: relative;
       padding: 20px 20px;
       transition: 0.3s;
       transition-property: color;
+
     }
     
     .wrapper.collapse .sidebar .sidebar-menu .item .menu-btn:hover{
       background: #1d435c;
       text-decoration: none;
+      font-size: 30px;
     }
     
     .wrapper.collapse .sidebar .sidebar-menu .item .menu-btn i{
@@ -1145,9 +1150,9 @@
     }
     
     .wrapper.collapse .main-container{
-      width: (100% - 230px);
+      width: (100% - 300px);
       margin-top: 70px;
-      margin-left: 220px;
+      margin-left: 300px;
       padding: 15px;
       background: #F2F3F7;
       background-size: cover;
@@ -1197,7 +1202,9 @@
     }
   
     .header .title {
-      width: 150%;
+      width: 120%;
+      margin-bottom: 20px;
+      font-size: 35px;
     }
 
     .wrapper .main-container .card{
@@ -1225,8 +1232,119 @@
       font-weight: 700;
       padding-bottom: 30px;
     }
+    .btn-smallblue{
+      border-radius: 3px;
+      color: #fff;
+      width: 40px;
+      height: 40px;
+      margin: 10px 5px 10px 0px;
+      background-color: #224E6B;
+      border-color: #224E6B;
+    }
+    .btn-smallred{
+      border-radius: 3px;
+      color: #fff;
+      width: 40px;
+      height: 40px;
+      margin: 10px 5px 10px 0px;
+      background-color: #224E6B;
+      border-color: #224E6B;
+    }
+    .btn-smallgreen{
+      border-radius: 3px;
+      color: #fff;
+      width: 40px;
+      height: 40px;
+      margin: 10px 5px 10px 0px;
+      background-color: #224E6B;
+      border-color: #224E6B;
+    }
 
+    .btn-add {
+      border-radius: 3px;
+      color: #fff;
+      width: 45px;
+      height: 45px;
+      margin: 10px 5px 10px 0px;
+      background-color: #224E6B;
+      border-color: #224E6B;
+    }
+    
+    .btn-refresh {
+      border-radius: 3px;
+      color: #fff;
+      width: 45px;
+      height: 45px;
+      margin: 10px 5px 10px 0px;
+      background-color: #4BA867;
+      border-color: #4BA867;
+    }
 
+    .btn-add-green {
+      border-radius: 3px;
+      color: #fff;
+      width: 140px;
+      height: 45px;
+      margin: 10px 5px 10px 0px;
+      background-color: #4BA867;
+      border-color: #4BA867;
+    }
+   
+    .btn-blue {
+      border-radius: 3px;
+      color: #fff;
+      width: 45px;
+      height: 45px;
+      margin: 10px 5px 10px 0px;
+      background-color: #224E6B;
+      border-color: #224E6B;
+    }
+    
+    .btn-cancel {
+      border-radius: 3px;
+      color: #fff;
+      width: 120px;
+      height: 55px;
+      margin: 50px 5px 10px 0px;
+      background-color: #c72432;
+      border-color: #c72432;
+      float: left;
 
+    }
+
+    .btn-submit {
+      border-radius: 3px;
+      color: #fff;
+      width: 120px;
+      height: 55px;
+      margin: 50px 5px 10px 0px;
+      background-color: #4BA867;
+      border-color: #4BA867;
+      float: left;
+    }
+    .wrapper .main-container .big-card{
+      width: 100%;
+      border-radius: 5px;
+      text-align: left;
+      background: white;
+      padding: 15px;
+      margin: 10px;
+      font-size: 30px;
+    }
+    .check-icon{
+      border-radius: 100px;
+      color: white;
+      background-color: #4BA867;
+      width: 40px;
+      height: 40px;
+      padding: 6px;
+    }
+    .flag-icon{
+      border-radius: 100px;
+      color: #4BA867;
+      width: 40px;
+      height: 40px;
+      padding: 6px;
+    }
 
   }
