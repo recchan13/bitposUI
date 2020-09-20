@@ -917,10 +917,13 @@
     }
   }
 
-  /* ################################ RESPONSIF UNTUK MOBILE ######################## */
-  @media only screen and (max-width: 768px) {
+  /* ################################ RESPONSIF UNTUK tampilan kecil desktop ######################## */
+
+
+/*mobile*/
+    @media only screen and (max-device-width: 768px) {
     .wrapper .main-container .header-container{
-      font-size: 26px;
+      font-size: 40px;
     }
     .wrapper .main-container .row{
       display: flex;
@@ -1021,11 +1024,11 @@
     }
     
     .wrapper .sidebar .sidebar-menu .item .menu-btn{
-      font-size: 23px;
+      font-size: 20px;
     }
     
     .wrapper .sidebar .sidebar-menu .item .sub-menu i{
-      font-size: 18px;
+      font-size: 20px;
       padding-left: 3px;
     }
     
@@ -1079,7 +1082,7 @@
       display: inline;
     }
     .wrapper.collapse .sidebar .sidebar-menu .item .menu-btn{
-      font-size: 15px;
+      font-size: 20px;
       display: block;
       color: #fff;
       position: relative;
@@ -1099,7 +1102,7 @@
     
     .wrapper.collapse .sidebar .sidebar-menu .item .menu-btn .drop-down{
       float: right;
-      font-size: 12px;
+      font-size: 20px;
       margin-top: 3px;
     }
     
@@ -1116,7 +1119,7 @@
       position: relative;
       color: #fff;
       white-space: nowrap;
-      font-size: 15px;
+      font-size: 20px;
       padding: 15px;
       padding-left: 30px;
       transition: 0.3s;
@@ -1134,7 +1137,7 @@
     
     .wrapper.collapse .sidebar .sidebar-menu .item .sub-menu i{
       padding-right: 20px;
-      font-size: 10px;
+      font-size: 20px;
     }
     
     .wrapper.collapse .sidebar .sidebar-menu .item:target .sub-menu{
@@ -1196,4 +1199,34 @@
     .header .title {
       width: 150%;
     }
+
+    .wrapper .main-container .card{
+      border-radius: 5px;
+      max-width: 400px;
+      text-align: center;
+      background: white;
+      padding: 45px;
+      margin: 10px;
+      margin-bottom: 10px;
+      font-size: 25px;
+    }
+
+    .wrapper .main-container .card > i{
+      padding-bottom: 30px;
+    }
+
+    .wrapper .main-container .card > h5{
+      font-size: 25px;
+      padding-bottom: 30px;
+    }
+
+    .wrapper .main-container .card > p{
+      font-size: 50px;
+      font-weight: 700;
+      padding-bottom: 30px;
+    }
+
+
+
+
   }
