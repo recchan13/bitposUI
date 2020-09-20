@@ -918,7 +918,7 @@
   }
 
   /* ################################ RESPONSIF UNTUK MOBILE ######################## */
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 768px) {
     .wrapper .main-container .header-container{
       font-size: 26px;
     }
