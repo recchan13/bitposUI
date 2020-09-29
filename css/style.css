@@ -306,7 +306,8 @@
 
   .wrapper .main-container .card > h4{
     font-size: 15px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
+    margin-bottom: : 20px; 
   }
 
   .wrapper .main-container .card > p{
@@ -921,9 +922,9 @@
 
 
 /*mobile*/
-    @media only screen and (max-device-width: 600px){
+    @media only screen and (max-device-width: 600px), only screen and (max-width: 480px) {
     .wrapper .main-container .header-container{
-      font-size: 26px;
+      font-size: 35px;
       font-weight: bold;
     }
     .wrapper .main-container .row{
@@ -1025,8 +1026,9 @@
     }
     
     .wrapper .sidebar .sidebar-menu .item .menu-btn{
-      font-size: 25px;
+      font-size: 38px;
       width: 310px
+      padding:30px;
     }
     
     .wrapper .sidebar .sidebar-menu .item .sub-menu i{
@@ -1163,14 +1165,14 @@
     /* ################################ PAGINATION ######################## */
     .pagination {
       margin-top: 15px;
-      font-size: 10pt;
-      float: right;
+      font-size: 20pt;
+      float: center;
     }
     
     .pagination a {
       color: black;
       float: left;
-      padding: 5px 5px;
+      padding: 20px 20px;
       text-decoration: none;
 
       border: 1px solid #ddd;
@@ -1235,49 +1237,54 @@
     .btn-smallblue{
       border-radius: 3px;
       color: #fff;
-      width: 40px;
-      height: 40px;
+      width: 55px;
+      height: 55px;
       margin: 10px 5px 10px 0px;
       background-color: #224E6B;
       border-color: #224E6B;
+      font-size: 30px;
     }
     .btn-smallred{
       border-radius: 3px;
       color: #fff;
-      width: 40px;
-      height: 40px;
+      width: 55px;
+      height: 55px;
       margin: 10px 5px 10px 0px;
       background-color: #224E6B;
       border-color: #224E6B;
+      font-size: 30px;
     }
     .btn-smallgreen{
       border-radius: 3px;
       color: #fff;
-      width: 40px;
-      height: 40px;
+      width: 55px;
+      height: 55px;
       margin: 10px 5px 10px 0px;
       background-color: #224E6B;
       border-color: #224E6B;
+      font-size: 30px;
     }
 
     .btn-add {
       border-radius: 3px;
       color: #fff;
-      width: 45px;
-      height: 45px;
+      width: 55px;
+      height: 55px;
       margin: 10px 5px 10px 0px;
       background-color: #224E6B;
       border-color: #224E6B;
+      font-size: 30px;
     }
     
     .btn-refresh {
       border-radius: 3px;
       color: #fff;
-      width: 45px;
-      height: 45px;
+      width: 55px;
+      height: 55px;
       margin: 10px 5px 10px 0px;
       background-color: #4BA867;
       border-color: #4BA867;
+      font-size: 26px;
     }
 
     .btn-add-green {
@@ -1298,6 +1305,7 @@
       margin: 10px 5px 10px 0px;
       background-color: #224E6B;
       border-color: #224E6B;
+      font-size: 30px;
     }
     
     .btn-cancel {
@@ -1309,7 +1317,7 @@
       background-color: #c72432;
       border-color: #c72432;
       float: left;
-
+      font-size: 20px;
     }
 
     .btn-submit {
@@ -1321,6 +1329,7 @@
       background-color: #4BA867;
       border-color: #4BA867;
       float: left;
+      font-size: 20px;
     }
     .wrapper .main-container .big-card{
       width: 100%;
@@ -1338,6 +1347,7 @@
       width: 40px;
       height: 40px;
       padding: 6px;
+      font-size: 24px;
     }
     .flag-icon{
       border-radius: 100px;
@@ -1345,6 +1355,91 @@
       width: 40px;
       height: 40px;
       padding: 6px;
+      font-size: 24px;
     }
 
+    .flex-card.grow1{
+      width: 95%;
+      font-size: 24px;
+    }
+    .flex-card.grow2{
+      width: 95%;
+      font-size: 24px;
+    }
+    
+
+    .slider.round {
+      height: 32px;
+      width: 48px;
+
+    }
+    
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 24px;
+      width: 24px;
+      left: 6px;
+      bottom: 4px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+      border-radius: 50%;
+    }
+    td{
+      padding:30px;
+      text-align: center;
+    }
+    th{
+      text-align: center;
+      padding: 30px;
+    }
+    h4{
+      padding-bottom: 15px; 
+    }
+    .table-round{
+      border-spacing: 0.5;
+      margin-top: 20px;
+    }
+    .centered-wrapper > h4 {
+      font-size: 30px;
+      margin-bottom: 50px;
+    }
+    input, select, textarea {
+      font-size: 25px;
+      height: 80px;
+    }
+    option{
+      font-size: 10px;
+      height: 20px;
+    }
+
+    .input-order > input[type=text]{
+      font-size: 25px;
+      height: 80px;
+    }
+    .form-card > input[type=text]{
+      font-size: 25px;
+      height: 80px;
+    }
+    .form-card{
+      border-radius: 5px;
+      width: 100%;
+      background: #F2F3F7;
+      color: black;
+      padding: 15px;
+      font-size: 15px;
+      font-weight: 600;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    .form-card > p{
+      margin-bottom: 15px;
+      font-size: 20px
+    }
+
+    .form-card > select{
+      height: 40px;
+      cursor: pointer;
+    }
   }
